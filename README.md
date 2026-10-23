@@ -100,10 +100,11 @@ StockPulse/
 │   └── UI_code.ipynb              # Prototype: connection testing & function development
 │
 ├── docs/                          # Screenshots used in this README
-│   ├── dashboard-metrics.png
-│   ├── dashboard-tables.png
+│   ├── dashboard.png
 │   ├── add-new-product.png
-│   └── operational-tasks-menu.png
+│   ├── product-history.png
+│   ├── place-reorder.png
+│   └── receive-reorder.png
 │
 └── data/
     ├── products.csv               # 200 products
@@ -320,32 +321,39 @@ Open **http://localhost:8501** in your browser.
 
 ### 📸 Screenshots
 
-#### 1. Dashboard: Basic Metrics & Supplier Contacts
-KPI cards for suppliers, products, categories, 3-month sales and restock value, and products that are below reorder level with no pending order.
+#### 1. Dashboard: Basic Metrics
+KPI cards for suppliers, products, categories, 3-month sales and restock value, and products that are below reorder level with no pending order, followed by the supplier contact table.
 
 <p align="center">
-  <img src="docs/dashboard-metrics.png" alt="Dashboard basic metrics and supplier contact table" width="900">
+  <img src="docs/dashboard.png" alt="Dashboard with basic metrics and supplier contact table" width="900">
 </p>
 
-#### 2. Dashboard: Product Stock & Reorder Alerts
-Products with their supplier and current stock, plus a live list of products that need to be reordered.
-
-<p align="center">
-  <img src="docs/dashboard-tables.png" alt="Product with supplier and stock table, and products needing reorder" width="900">
-</p>
-
-#### 3. Operational Task: Add New Product
-A validated form that calls the `AddNewProductManualID` stored procedure behind the scenes.
+#### 2. Add New Product
+A validated form that calls the `AddNewProductManualID` stored procedure. One click inserts the product, logs the initial shipment, and records the stock entry.
 
 <p align="center">
   <img src="docs/add-new-product.png" alt="Add new product form" width="900">
 </p>
 
-#### 4. Operational Task: Task Selector
-Switch between adding a product, viewing product history, placing a reorder, and receiving a reorder.
+#### 3. Product History
+Pick any product to see its complete timeline of shipments and stock entries (sales and restocks), powered by the `product_Inventory_History` view.
 
 <p align="center">
-  <img src="docs/operational-tasks-menu.png" alt="Operational task dropdown menu" width="900">
+  <img src="docs/product-history.png" alt="Product inventory history table" width="900">
+</p>
+
+#### 4. Place Reorder
+Select a product and a quantity to create a new reorder with an auto-generated ID.
+
+<p align="center">
+  <img src="docs/place-reorder.png" alt="Place reorder form" width="900">
+</p>
+
+#### 5. Receive Reorder
+Mark a reorder as received. The `MarkReorderAsEReceived` procedure updates the reorder status, product stock, shipments, and stock entries in a single transaction.
+
+<p align="center">
+  <img src="docs/receive-reorder.png" alt="Mark reorder as received form" width="900">
 </p>
 
 ---
@@ -377,6 +385,10 @@ Being transparent about these makes the project stronger.
 
 ---
 
-- LinkedIn:(https://www.linkedin.com/in/rohitwamane/)
+## 👤 Author
+
+**Rohit**
+- GitHub: [@your-username](https://github.com/your-username)
+- LinkedIn: [your-linkedin](https://linkedin.com/in/your-linkedin)
 
 ⭐ If you found this project useful, consider giving it a star!
