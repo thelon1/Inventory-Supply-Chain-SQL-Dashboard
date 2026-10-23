@@ -377,6 +377,6 @@ Being transparent about these makes the project stronger.
 
 ---
 
-- LinkedIn: [your-linkedin](https://www.linkedin.com/in/rohitwamane/)
+- LinkedIn:(https://www.linkedin.com/in/rohitwamane/)
 
 ⭐ If you found this project useful, consider giving it a star!
