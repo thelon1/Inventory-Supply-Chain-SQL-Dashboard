@@ -332,7 +332,7 @@ KPI cards for suppliers, products, categories, 3-month sales and restock value, 
 A validated form that calls the `AddNewProductManualID` stored procedure. One click inserts the product, logs the initial shipment, and records the stock entry.
 
 <p align="center">
-  <img src="docs/add-new-product.png" alt="Add new product form" width="900">
+  <img src="add-new-product.png" alt="Add new product form" width="900">
 </p>
 
 #### 3. Product History
