@@ -325,7 +325,7 @@ Open **http://localhost:8501** in your browser.
 KPI cards for suppliers, products, categories, 3-month sales and restock value, and products that are below reorder level with no pending order, followed by the supplier contact table.
 
 <p align="center">
-  <img src="docs/dashboard.png" alt="Dashboard with basic metrics and supplier contact table" width="900">
+  <img src="dashboard.png" alt="Dashboard with basic metrics and supplier contact table" width="900">
 </p>
 
 #### 2. Add New Product
