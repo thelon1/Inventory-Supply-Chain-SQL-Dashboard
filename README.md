@@ -339,21 +339,21 @@ A validated form that calls the `AddNewProductManualID` stored procedure. One cl
 Pick any product to see its complete timeline of shipments and stock entries (sales and restocks), powered by the `product_Inventory_History` view.
 
 <p align="center">
-  <img src="docs/product-history.png" alt="Product inventory history table" width="900">
+  <img src="product-history.png" alt="Product inventory history table" width="900">
 </p>
 
 #### 4. Place Reorder
 Select a product and a quantity to create a new reorder with an auto-generated ID.
 
 <p align="center">
-  <img src="docs/place-reorder.png" alt="Place reorder form" width="900">
+  <img src="place-reorder.png" alt="Place reorder form" width="900">
 </p>
 
 #### 5. Receive Reorder
 Mark a reorder as received. The `MarkReorderAsEReceived` procedure updates the reorder status, product stock, shipments, and stock entries in a single transaction.
 
 <p align="center">
-  <img src="docs/receive-reorder.png" alt="Mark reorder as received form" width="900">
+  <img src="receive-reorder.png" alt="Mark reorder as received form" width="900">
 </p>
 
 ---
